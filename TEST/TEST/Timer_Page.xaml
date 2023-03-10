@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TEST.Timer_Page">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lbl"
+                Text="Welcome to Xamarin.Forms!"
+                FontSize="Title"
+                BackgroundColor="Orange"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="btn" 
+                    Text="Enter"
+                    FontSize="Large"
+                    Clicked="btn_Clicked">
+                
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
