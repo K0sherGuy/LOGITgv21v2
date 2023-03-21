@@ -12,8 +12,8 @@ namespace TEST
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class StartPage : ContentPage
     {
-        List<ContentPage> pages = new List<ContentPage>() { new Entry_Page(), new Timer_Page(), new BoxView_Page(), new Valgusfoor_Page(), new DateTime_Page(), new StepperSlider_Page(), new RGB(), new Frame_Page(), new Picture_Page(), new Image_Page()};
-        List<string> tekstid = new List<string> { "Ava Entry leht", "Ava Timer leht", "Ava Box leht", "Ava Valgusfoor leht", "Ava Date leht", "Ava Stepper leht", "Ava RGB leht", "Ava Frame leht", "Ava Picture leht", "Ava Image leht" };
+        List<ContentPage> pages = new List<ContentPage>() { new Entry_Page(), new Timer_Page(), new BoxView_Page(), new Valgusfoor_Page(), new DateTime_Page(), new StepperSlider_Page(), new RGB(), new Frame_Page(), new Picture_Page(), new Image_Page(), new Lumememm_Page()};
+        List<string> tekstid = new List<string> { "Ava Entry leht", "Ava Timer leht", "Ava Box leht", "Ava Valgusfoor leht", "Ava Date leht", "Ava Stepper leht", "Ava RGB leht", "Ava Frame leht", "Ava Picture leht", "Ava Image leht", "Ava Lumememm leht"};
         public StartPage()
         {
             StackLayout st = new StackLayout
@@ -34,8 +34,6 @@ namespace TEST
                 st.Children.Add(button);
                 button.Clicked += Navigation_function;
             }
-
-            
             Content = st;
         }
 
