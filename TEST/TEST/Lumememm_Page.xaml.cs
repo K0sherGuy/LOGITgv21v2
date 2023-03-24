@@ -82,8 +82,8 @@ namespace TEST
             invis = new Slider
                 {
                     Minimum = 0,
-                    Maximum = 1,
-                    Value = 0,
+                    Maximum = 10,
+                    Value = 5,
                     MinimumTrackColor = Color.White,
                     MaximumTrackColor = Color.Black,
                     ThumbColor = Color.Red,
