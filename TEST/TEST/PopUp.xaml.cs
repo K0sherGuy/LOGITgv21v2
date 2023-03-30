@@ -71,13 +71,14 @@ namespace TEST
                 int randomNumber = rnd.Next(1, 10);
                 string a = Convert.ToString(randomNumber);
                 string b = Convert.ToString(mulResultDec);
-                int decimalNumber = Convert.ToInt32(randomNumber);
-                string abs = await DisplayPromptAsync("How much is", a, " * ", b, maxLength: 2, keyboard: Keyboard.Numeric);
-                int c = Convert.ToInt32(abs);
-                if (randomNumber * decimalNumber == c)
+                string abs = await DisplayPromptAsync("How much is", a + "*" + b, maxLength: 2, keyboard: Keyboard.Numeric);
+                int c = randomNumber * mulResultDec;
+                int absv2 = Convert.ToInt32(abs);
+                if (absv2 == c)
                 {
                     await DisplayAlert("Info", "You are right", "Continue");
-                } else
+                }
+                else
                 {
                     await DisplayAlert("Info", "You are wrong", "Continue");
                 }
